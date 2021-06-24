@@ -1,7 +1,7 @@
 lib{ctre}: hxx{*}
 
-out_pfx = [dir_path] $out_root/include/ctre/
-src_pfx = [dir_path] $src_root/include/ctre/
+out_pfx = [dir_path] $out_root/include/
+src_pfx = [dir_path] $src_root/include/
 
 lib{ctre}: cxx.export.poptions = "-I$out_pfx" "-I$src_pfx"
 
@@ -10,6 +10,6 @@ lib{ctre}: cxx.export.poptions = "-I$out_pfx" "-I$src_pfx"
 #
 hxx{*}:
 {
-  install         = include/ctre/
+  install         = include
   install.subdirs = true
 }

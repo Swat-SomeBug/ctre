@@ -3,7 +3,6 @@
 
 int main(int argc, char* argv[]) {
   
-  bool status = false;
   static constexpr auto pattern = ctll::fixed_string{ "^[0-9A-Za-z_.]+@[0-9A-Za-z_]+[.][a-z]{2,}$" };
   if(argc != 2) {
     std::cout << "Email address required.\n";
