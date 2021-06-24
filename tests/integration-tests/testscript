@@ -1,11 +1,6 @@
 : MATCHING-1
-$* swat.somebug@gmail.com >>EOM
-MATCHED!
-EOM
-
+$* swat.somebug@gmail.com >'MATCHED!'
 
 : NOT-MATCHING-1
-$* swat-anotherbug@london33\$33.au >>EOM
-NOT MATCHED!
-EOM
+$* swat-anotherbug@london33\$33.au >'NOT MATCHED!'
 
