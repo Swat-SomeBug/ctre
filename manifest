@@ -1,0 +1,11 @@
+: 1
+name: ctre
+version: 3.4.2-b.1.20210622071251.eeada602518d
+summary: Fast compile-time regular expressions with support for matching/searching/capturing during compile-time or runtime.
+license: Apache-2.0
+description-file: UPSTREAM.README.md
+url: https://github.com/hanickadot/compile-time-regular-expressions
+package-email: swat.somebug@gmail.com
+depends: * build2 >= 0.13.0
+depends: * bpkg >= 0.13.0
+requires: c++17 | c++20

@@ -1,0 +1,11 @@
+import impl_libs = ctre%lib{ctre}
+
+internal_inc_dir = [dir_path] $src_base/internal-includes/
+
+for src: cxx{*}
+{
+  src_name = $name($src)
+  ./: obja{$src_name}: hxx{**} $impl_libs cxx{$src_name}
+}
+
+cxx.poptions += "-I$internal_inc_dir"

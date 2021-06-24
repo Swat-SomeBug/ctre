@@ -1,0 +1,15 @@
+lib{ctre}: hxx{*}
+
+out_pfx = [dir_path] $out_root/include/ctre/
+src_pfx = [dir_path] $src_root/include/ctre/
+
+lib{ctre}: cxx.export.poptions = "-I$out_pfx" "-I$src_pfx"
+
+# Install into the ctre/ subdirectory of, say, /usr/include/
+# recreating subdirectories.
+#
+hxx{*}:
+{
+  install         = include/ctre/
+  install.subdirs = true
+}

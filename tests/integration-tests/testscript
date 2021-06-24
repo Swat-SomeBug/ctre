@@ -1,0 +1,11 @@
+: MATCHING-1
+$* swat.somebug@gmail.com >>EOM
+MATCHED!
+EOM
+
+
+: NOT-MATCHING-1
+$* swat-anotherbug@london33\$33.au >>EOM
+NOT MATCHED!
+EOM
+

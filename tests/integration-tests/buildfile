@@ -1,0 +1,4 @@
+import impl_libs = ctre%lib{ctre}
+
+./: exe{main}: cxx{main} $impl_libs testscript
+
