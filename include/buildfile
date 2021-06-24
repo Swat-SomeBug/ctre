@@ -10,6 +10,6 @@ lib{ctre}: cxx.export.poptions = "-I$out_pfx" "-I$src_pfx"
 #
 hxx{*}:
 {
-  install         = include
+  install         = include/
   install.subdirs = true
 }
